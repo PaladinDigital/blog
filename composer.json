@@ -1,0 +1,19 @@
+{
+  "name": "paladin-digital/blog",
+  "description": "Laravel Blogging Package",
+  "require": {
+    "laravel/framework": "5.5.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "PaladinDigital\\Blog\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "PaladinDigital\\Blog\\ServiceProvider"
+      ]
+    }
+  }
+}
