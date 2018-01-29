@@ -10,7 +10,7 @@ class BlogPost extends Model
     protected $table = 'blog';
 
     protected $fillable = [
-        'title', 'slug', 'body', 'published'
+        'title', 'slug', 'body', 'published', 'author_id', 'published_at'
     ];
 
     public function author()
