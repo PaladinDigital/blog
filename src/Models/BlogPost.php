@@ -12,8 +12,14 @@ class BlogPost extends Model
         'name', 'email', 'password',
     ];
 
+    public function author()
+    {
+        $userModel = config('auth.providers.users.model');
+        return $this->belongsTo($userModel, 'user_id');
+    }
+
     public function scopePublished(Builder $query)
     {
-        return $query->where('published', true);
+        return $query->where('published', 1);
     }
 }
