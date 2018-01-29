@@ -3,6 +3,7 @@
 namespace PaladinDigital\Blog\Models;
 
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Model;
 
 class BlogPost extends Model
 {
