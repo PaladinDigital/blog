@@ -2,7 +2,8 @@
   "name": "paladin-digital/blog",
   "description": "Laravel Blogging Package",
   "require": {
-    "laravel/framework": "5.5.*"
+    "laravel/framework": "5.5.*",
+    "spatie/laravel-medialibrary": "^6.0.0"
   },
   "autoload": {
     "psr-4": {
