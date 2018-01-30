@@ -4,9 +4,13 @@ namespace PaladinDigital\Blog\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
+use Spatie\MediaLibrary\HasMedia\HasMediaTrait;
+use Spatie\MediaLibrary\HasMedia\Interfaces\HasMedia;
 
-class BlogPost extends Model
+class BlogPost extends Model implements HasMedia
 {
+    use HasMediaTrait;
+
     protected $table = 'blog';
 
     protected $fillable = [
