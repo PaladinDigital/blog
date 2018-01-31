@@ -12,6 +12,10 @@ class ServiceProvider extends IlluminateServiceProvider
 
         $this->loadMigrationsFrom($packagePath . 'database/migrations');
 
+        $this->loadRoutesFrom($packagePath . 'routes/web.php');
+
+        $this->loadViewsFrom($packagePath . 'resources/views', 'blog');
+
         // Allow config publish.
         $this->publishes([
             $packagePath.'config/pd-blog.php' => config_path('pd-blog.php'),

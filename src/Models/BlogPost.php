@@ -11,6 +11,13 @@ class BlogPost extends Model implements HasMedia
 {
     use HasMediaTrait;
 
+    public $rules = [
+        'title'     => 'required|min:1|max:255',
+        'slug'      => 'required|min:1|max:255',
+        'body'      => 'required|min:1|max:255',
+        'author_id' => 'required|min:1|exists:users,id',
+    ];
+
     protected $table = 'blog';
 
     protected $fillable = [
@@ -26,5 +33,11 @@ class BlogPost extends Model implements HasMedia
     public function scopePublished(Builder $query)
     {
         return $query->where('published', 1);
+    }
+
+    public static function validationRules()
+    {
+        $obj = new BlogPost();
+        return $obj->rules;
     }
 }

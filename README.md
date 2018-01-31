@@ -1,8 +1,6 @@
 # Blog Package
 
 This package provides the resources necessary to create a blog.
-This package aims to remove some of the opinions that may be present in a
-plug and play blog package (ie you can choose the name of your routes, etc.).
 
 ## Requirements
 
@@ -10,10 +8,20 @@ plug and play blog package (ie you can choose the name of your routes, etc.).
 
 ## Installation
 
-Add the package.
+Add the package:
 
     composer require "paladin-digital/blog"
 
-Run the migration.
+Run the migration:
 
     php artisan migrate
+
+Add the filesystem to store blog images (the root can be adjusted as needed):
+
+config/filesystems.php
+
+    'blog' => [
+        'driver' => 'local',
+        'root' => public_path('images/blog'),
+        'visibility' => 'public',
+    ],

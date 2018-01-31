@@ -3,7 +3,8 @@
   "description": "Laravel Blogging Package",
   "require": {
     "laravel/framework": "5.5.*",
-    "spatie/laravel-medialibrary": "^6.0.0"
+    "spatie/laravel-medialibrary": "^6.0.0",
+    "taskforcedev/laravel-support": "1.1.*"
   },
   "autoload": {
     "psr-4": {
