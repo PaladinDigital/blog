@@ -30,7 +30,7 @@ class BlogPost extends Model implements HasMedia
         'published_at'
     ];
 
-    public function published()
+    public function publishedAt()
     {
         return $this->published_at->format('d/m/Y H:i');
     }
