@@ -24,6 +24,17 @@ class BlogPost extends Model implements HasMedia
         'title', 'slug', 'body', 'published', 'author_id', 'published_at'
     ];
 
+    protected $dates = [
+        'created_at',
+        'updated_at',
+        'published_at'
+    ];
+
+    public function published()
+    {
+        return $this->published_at->format('d/m/Y H:i');
+    }
+
     public function author()
     {
         $userModel = config('auth.providers.users.model');
