@@ -12,7 +12,7 @@ Add the package:
 
     composer require "paladin-digital/blog"
 
-Run the migration:
+Run the migrations:
 
     php artisan migrate
 
