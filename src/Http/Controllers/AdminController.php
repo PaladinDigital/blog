@@ -25,8 +25,9 @@ class AdminController extends BaseController
     {
       try {
         $post = BlogPost::where('id', $postId)->firstOrFail();
+        return view('blog::post', ['post' => $post]);
       } catch (Exception $e) {
-        return redirect();
+        return redirect()->to('/');
       }
     }
 
