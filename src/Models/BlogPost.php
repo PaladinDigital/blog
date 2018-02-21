@@ -48,7 +48,6 @@ class BlogPost extends Model implements HasMedia
 
     public static function validationRules()
     {
-        $obj = new BlogPost();
-        return $obj->rules;
+        return (new BlogPost())->rules;
     }
 }
