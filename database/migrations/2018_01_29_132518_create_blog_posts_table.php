@@ -8,7 +8,7 @@ class CreateBlogTable extends Migration
 {
     public function up()
     {
-        Schema::create('blog', function (Blueprint $table) {
+        Schema::create('blog_posts', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title');
             $table->string('slug');
