@@ -1,5 +1,7 @@
 # Blog Package
 
+Status: Pre-release (Code may be subject to breaking changes).
+
 This package provides the resources necessary to create a blog.
 
 ## Requirements
