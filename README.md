@@ -12,7 +12,7 @@ This package provides the resources necessary to create a blog.
 
 Add the package:
 
-    composer require "paladin-digital/blog"
+    composer require "paladindigital/blog"
 
 Run the migrations:
 
