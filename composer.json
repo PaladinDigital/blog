@@ -1,5 +1,5 @@
 {
-  "name": "paladin-digital/blog",
+  "name": "paladindigital/blog",
   "description": "Laravel Blogging Package",
   "require": {
     "laravel/framework": "5.5.*",
